@@ -28,6 +28,7 @@ C.	Admin:
 D.	All the users are able to login into system using credentials set by the admin. System requires minimum one default admin credentials for the system to be usable.
 
 Implementation Details:
+
 A.	Database : Consists of two entities 1. Enquiry 2. User
 
 B.	LogIn / Registration :
