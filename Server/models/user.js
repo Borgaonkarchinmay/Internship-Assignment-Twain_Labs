@@ -74,6 +74,7 @@ userSchema.methods.generateJWToken = async function(){
         return token;
     }catch(exp){
         console.log("exp" + exp);
+        res.send({message : "Token generation failed!! try again."})
     }
 }
 
