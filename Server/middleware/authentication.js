@@ -13,7 +13,7 @@ const authUser = async (req, res, next)=>{
         next();
 
     }catch(exp){
-        res.status(400).send(exp);
+        res.status(400).send({message : "Unauthorized token detected!"});
     }
 };
 
@@ -24,7 +24,7 @@ const authRole = (permitted_roles)=>{
                 next();
             }
             else{
-                return res.status(401).send({status : "You are UNAUTHORIZED to use this functionalit"}); 
+                return res.status(401).send({status : "You are UNAUTHORIZED to use this functionality"}); 
             }
         }catch(exp){
             res.status(400).send(exp);
