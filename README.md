@@ -29,14 +29,15 @@ D.	All the users are able to login into system using credentials set by the admi
 
 Implementation Details:
 A.	Database : Consists of two entities 1. Enquiry 2. User
+
 B.	LogIn / Registration :
 1.	JWT tokens are cached in the client cookies and used in further subsequent api calls for authentication/authorization.
 2.	User’s ID is used as a payload in JWT
+
 C.	MiddleWare:
 1.	2 functions authUser and authRole are used for authorization.
 2.	authRole take permitted roles(admin, manager, employee) as arguments. And thereby gaurds the api routes from unauthorized access.
 3.	JWT tokens cached in client cookies is used by backend using cookie-parser dependency.
-
 
 D.	Brief API routing overview:
 1.	Role specific API’s are grouped together.
