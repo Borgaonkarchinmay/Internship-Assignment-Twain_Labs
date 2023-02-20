@@ -11,11 +11,10 @@ A.	Employee :
 1.	Add enquiries (date, vehicle name, customer’s details)
 2.	View his/her profile
 3.	View target set by his/her manager(only count .. just for simulation purpose)
-4.	View enquiries assigned to him/her (either by employee or by his/her manager)
+4.	View enquiries assigned to him/her (either added by the employee or assigned by his/her manager)
 
 B.	Manager:
-1.	View details of the employee working in manager’s department. (Assumption:
-Each department has exactly one manager)
+1.	View details of the employee working in manager’s department. (Assumption: Each department has exactly one manager)
 2.	Set/Update target for employees of his/her department. (Only target count)
 3.	View enquires of added by the employees of his/her department
 4.	Delete/Update enquiry details
